@@ -6,10 +6,47 @@ body {
     margin:0px;
     padding:0px;
 }
-figure img {
-    width: 500px;
+.navbar {
+    transition: all 0.4s;
 }
-nav a:link {
+
+.navbar .nav-link {
+    color: #0bdaff;
+}
+
+.navbar .nav-link:hover,
+.navbar .navlink:focus {
+    color: #0bdaff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #0bdaff;
+}
+
+.navbar.active {
+    background: #0bdaff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0 ,0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+.navbar.active .navbar-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+
+
+
+/* nav a:link {
     color:aliceblue;
 }
 nav a:visited {
@@ -40,6 +77,9 @@ nav h1 {
 nav img {
     padding: 5px;
     width:35px;
+} */
+figure img {
+    width: 500px;
 }
 .float-container {
     display: flex;

@@ -1,43 +1,29 @@
 
-<nav>
-    <section>
-        <a href="index.html">Home</a>
-        <a href="trainer.html">Trainers</a>
-        <a href="track.html">Track</a>
-        <a href="crosscountry.html">Cross Country</a>
-        <a href="race.html">Race</a>
-    </section>
-    <h1>Collin Running Website</h1>
-    <h3>Honest Running Shoe Reviews From A Passionate Runner</h3>
-    <div>
-        <h3>Follow Me on Social Media</h3>
-        <img src="./images/facebook.png" alt="Facebook" id="facebook">
-        <img src="./images/instagram.png" alt="instagram" id="instagram">
-        <img src="./images/strava.png" alt="strava" id="strava">
-        <img src="./images/twitter.png" alt="Twitter" id="twitter">
+<nav class="navbar navbar-expand-lg fixed-top py-3">
+    <div id="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold">Collin's Running Website</a>
+        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active"><a href="index.html" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">About Me</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Shoe Reviews</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Running News</a></li>
+            </ul>
+          </div>
+
+        
     </div>
-    <script src="../scripts/project1.js">
-        window.onload = function() {
-            const facebook = document.getElementById("facebook");
-            facebook.addEventListener('click', function() {
-                alert("Sorry, I wasn't actually going to make a facebook page for this")
-            });
 
-            const instagram = document.getElementById("instagram");
-            instagram.addEventListener('click', function() {
-                alert("Sorry, I wasn't actually going to make a instagram page for this")
+    <script>
+        $(function () {
+            $(window).on('scroll', function () {
+                if ( $(window).scrollTop() > 10) {
+                    $('.navbar').removeClass('active');
+                }
             });
-
-            const strava = document.getElementById("strava");
-            strava.addEventListener('click', function() {
-                alert("Sorry, I wasn't actually going to make a facebook page for this")
-            });
-
-            const twitter = document.getElementById("twitter");
-            twitter.addEventListener('click', function() {
-                alert("Sorry, I wasn't actually going to make a twitter page for this")
-            });
-        }
-
+        });
     </script>
+
+
 </nav>
