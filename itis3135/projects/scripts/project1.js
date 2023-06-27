@@ -26,7 +26,7 @@ $(document).ready(function() {
 
 
 
-
+//Social Media button links
     // const facebook = document.getElementById("facebook");
     // facebook.addEventListener('click', function() {
     //     alert("Sorry, I wasn't actually going to make a facebook page for this")
